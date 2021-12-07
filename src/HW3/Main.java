@@ -2,7 +2,7 @@ package HW3;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17};
         System.out.println(getAbsentNumber(arr));
     }
 
@@ -26,6 +26,6 @@ public class Main {
             }
         }
 
-        return -1;
+        return arr[start] - start == 1 ? arr[start] + 1 : arr[start] - 1;
     }
 }
